@@ -10,7 +10,7 @@ import type {
   CreateSendBel,
   CreateMultiSendOrd,
 } from "./types.js";
-import { networks, Psbt } from "belcoinjs-lib";
+import { networks, Psbt } from "bitcoinjs-lib";
 
 export async function createSendBEL({
   utxos,
@@ -226,7 +226,7 @@ export async function createMultisendOrd({
   utxos,
   toAddress,
   signPsbtHex,
-  network = networks.bellcoin,
+  network = networks.bitcoin,
   changeAddress,
   publicKey,
   feeRate,

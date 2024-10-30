@@ -1,5 +1,5 @@
 import type { UnspentOutput, UnspentOutputBase } from "./OrdTransaction.js";
-import type { Network, Psbt } from "belcoinjs-lib";
+import type { Network, Psbt } from "bitcoinjs-lib";
 
 interface CreateSendBase {
   utxos: UnspentOutput[];

@@ -1,19 +1,19 @@
 {
-  "name": "bel-ord-utils",
-  "version": "0.2.10",
+  "name": "sathub-wallet-ord-utils",
+  "version": "0.0.1",
   "type": "module",
   "description": "Ordinals Utils",
   "keywords": [
-    "bells",
+    "satshub",
     "keyring"
   ],
-  "homepage": "https://github.com/unisat-wallet/ord-utils#readme",
+  "homepage": "https://github.com/satshub/sathub-wallet-ord-utils#readme",
   "bugs": {
-    "url": "https://github.com/unisat-wallet/ord-utils/issues"
+    "url": "https://github.com/satshub/sathub-wallet-ord-utils/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unisat-wallet/ord-utils.git"
+    "url": "https://github.com/satshub/sathub-wallet-ord-utils.git"
   },
   "author": "Kervin",
   "license": "ISC",
@@ -26,7 +26,7 @@
     "build": "rm -rf lib && tsc"
   },
   "dependencies": {
-    "belcoinjs-lib": "0.1.2",
+    "bitcoinjs-lib": "6.1.6",
     "bn.js": "5.2.1",
     "bs58check": "2.1.2"
   },

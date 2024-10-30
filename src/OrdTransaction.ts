@@ -1,6 +1,6 @@
 import { UTXO_DUST } from "./OrdUnspendOutput.js";
-import { payments, networks, Psbt } from "belcoinjs-lib";
-import type { Network } from "belcoinjs-lib";
+import { payments, networks, Psbt } from "bitcoinjs-lib";
+import type { Network } from "bitcoinjs-lib";
 import type { CreateSendBel } from "./types.js";
 
 interface TxInput {
@@ -85,7 +85,7 @@ export class OrdTransaction {
   private signTransaction: CreateSendBel["signTransaction"];
   private calculateFee?: CreateSendBel["calculateFee"];
   public changedAddress: string;
-  private network: Network = networks.bellcoin;
+  private network: Network = networks.bitcoin;
   private feeRate: number;
   private pubkey: string;
   private enableRBF = true;
